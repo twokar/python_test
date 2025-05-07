@@ -44,7 +44,7 @@ def compile_and_run():
         # 输出程序运行结果
         print(output)
         # 输出执行时间
-        print("Execution Time: {:.6f}".format(exec_time))
+        print("{:.6f}".format(exec_time))
     except subprocess.CalledProcessError as e:
         error_msg = "程序运行失败:\n" + (e.stderr if e.stderr else e.stdout)
         print(error_msg, file=sys.stderr)
